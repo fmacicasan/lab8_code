@@ -10,4 +10,9 @@ public class Vehicle {
     public void moves() {
         System.out.println("Vehicle moves");
     }
+
+//    @Override
+    public String toStzring() {
+        return "Vehicle with id=" + id;
+    }
 }

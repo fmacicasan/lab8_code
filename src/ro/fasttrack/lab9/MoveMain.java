@@ -11,6 +11,10 @@ public class MoveMain {
         v = new Car();
         v.moves();
         Car c = new Car();
+        System.out.println(c.toString());
+        System.out.println(v.toString());
+//        c.hashCode();
+//        c.equals(c);
 //        c = new Vehicle();
     }
 }
