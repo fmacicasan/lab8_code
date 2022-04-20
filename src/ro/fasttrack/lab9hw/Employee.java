@@ -15,6 +15,13 @@ public class Employee implements  Person {
     private String position;
     private LocalDateTime dateOfEmployment;
 
+    public Employee(String firstname, String lastname, LocalDateTime birthday,
+                    String address,
+                    String position, LocalDateTime dateOfEmployment
+                    ) {
+        this.firstname = firstname;
+    }
+
     public Employee(String firstname) {
         this.firstname = firstname;
     }
