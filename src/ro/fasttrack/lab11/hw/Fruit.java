@@ -1,5 +1,7 @@
 package ro.fasttrack.lab11.hw;
 
+import ro.fasttrack.lab11.sorting.DecreasingFruitComparator;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -8,7 +10,7 @@ import java.util.List;
  * @author flo
  * @since 04.05.2022.
  */
-public class Fruit implements Comparable<Fruit> {
+public class Fruit  { //implements Comparable<Fruit>
 
     public static void main(String[] args) {
         List<Fruit> fruits = new ArrayList<>();
@@ -18,7 +20,8 @@ public class Fruit implements Comparable<Fruit> {
         fruits.add(new Fruit("mere", 2));
         System.out.println(fruits);
 
-        Collections.sort(fruits);
+//        Collections.sort(fruits);
+        Collections.sort(fruits, new DecreasingFruitComparator().reversed());
         System.out.println(fruits);
 
     }
@@ -52,7 +55,7 @@ public class Fruit implements Comparable<Fruit> {
                 '}';
     }
 
-    @Override
+//    @Override
     public int compareTo(Fruit o) {
         //sort crescator
         return this.nume.compareTo(o.nume);
