@@ -25,5 +25,10 @@ public class Supermarket {
         System.out.println(filledBasket);
         filledBasket.adaugaCumparatura(new Fruit("bananan", 3));
         System.out.println(filledBasket);
+
+        List<Fruit> cumparaturi = filledBasket.getCumparaturi();
+        System.out.println(cumparaturi);
+        cumparaturi.add(new Fruit("rosi", 3));
+        System.out.println(filledBasket);
     }
 }
